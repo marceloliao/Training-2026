@@ -1,0 +1,6 @@
+@Fourth_app_from_CLI_HostAddress = http://localhost:5017
+
+GET {{Fourth_app_from_CLI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

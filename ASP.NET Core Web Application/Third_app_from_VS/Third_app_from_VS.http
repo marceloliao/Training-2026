@@ -1,0 +1,6 @@
+@Third_app_from_VS_HostAddress = http://localhost:5028
+
+GET {{Third_app_from_VS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

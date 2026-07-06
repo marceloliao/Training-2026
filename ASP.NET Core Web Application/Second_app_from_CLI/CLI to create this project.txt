@@ -1,0 +1,9 @@
+This app was created using CLI, ran the following commands:
+
+1) Run "dotnet new --help" -> To check the options for new projects
+2) Create a new folder using mkdir
+3) Navigate into that folder
+4) Run "dotnet new webapi" -> "webapi" is short template for a ASP.NET Core Web API application 
+5) Run "dotnet restore" -> For nuget?
+6) Run "dotnet build"
+7) Run "dotnet run" 

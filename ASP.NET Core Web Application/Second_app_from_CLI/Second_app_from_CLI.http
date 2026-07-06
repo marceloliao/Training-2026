@@ -1,0 +1,6 @@
+@Second_app_from_CLI_HostAddress = http://localhost:5103
+
+GET {{Second_app_from_CLI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
