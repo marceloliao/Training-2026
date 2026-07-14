@@ -29,3 +29,5 @@ print(bool({}))
 x = 200
 print(isinstance(x, int))  # True
 print(isinstance(x, str))  # False
+
+print(10==9)
