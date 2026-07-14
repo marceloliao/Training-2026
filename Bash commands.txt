@@ -3,6 +3,11 @@
 	or 
 	ls -ld */ to display as a list
 
+- To delete one file
+	rm filename.txt
+
+	rm -i filename.txt (interactive flag)
+
 - To use VIM to edit a text file
 	vim practice.txt
 	i → write three lines → Esc
@@ -10,14 +15,9 @@
 	/line to search
 	:wq
 
-	:w
-	Save
-	:q
-	Quit (fails if unsaved changes)
-	:wq
-	Save and quit
-	:q!
-	Quit without saving
-	:x
-	Save and quit (like :wq if changed)
+	:w 	Save
+	:q	Quit (fails if unsaved changes)
+	:wq	Save and quit
+	:q!	Quit without saving
+	:x	Save and quit (like :wq if changed)
 
