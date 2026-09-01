@@ -38,11 +38,11 @@ print("Printing newList at the line 36", newList)
 newList.clear()
 newList = [x for x in thislist if "a" in x]
 print("With List Comprehension, only get items that contains 'a': ", newList)
-print("Printing newList at the line 42", newList)
+print("Printing newList at the line 41", newList)
 
 newList.clear()
 newList = [x for x in range(10)]
-print("Printing newList at the line 47", newList)
+print("Printing newList at the line 45", newList)
 print("Printing one item per line")
 [print(x) for x in newList]
 

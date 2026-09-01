@@ -21,3 +21,9 @@
 	:q!	Quit without saving
 	:x	Save and quit (like :wq if changed)
 
+- To copy files and entire directories
+	cp source.txt destination.txt
+	cp source.txt /path/to/directory/ (to another directory)
+	cp -p source.txt destination.txt (to preserve file attributes, like timestamps, permissions, etc.)
+	cp -i source.txt destination.txt (Prompt before overwriting an existing file)
+	cp -r /path/to/source_folder /path/to/destination_folder (copy an entire directory recursively)
