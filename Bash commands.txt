@@ -27,3 +27,9 @@
 	cp -p source.txt destination.txt (to preserve file attributes, like timestamps, permissions, etc.)
 	cp -i source.txt destination.txt (Prompt before overwriting an existing file)
 	cp -r /path/to/source_folder /path/to/destination_folder (copy an entire directory recursively)
+
+- To rename a file
+	mv old_filename.txt new_filename.txt
+	mv -i old_filename.txt new_filename.txt (Prompt before overwriting an existing file with the new name)
+	mv -n old_filename.txt new_filename.txt (Avoid overwriting entirely: Use -n to ensure an existing file is never overwritten)
+	mv "my old file.txt" "my new file.txt" (Files with spaces: Enclose filenames containing spaces in quotes)

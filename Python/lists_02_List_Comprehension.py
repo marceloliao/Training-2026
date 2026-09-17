@@ -48,7 +48,6 @@ print("Printing one item per line")
 
 """
 Expression
-
 The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a list item in the new list:
 """
 newList.clear()
@@ -56,7 +55,7 @@ newList = [x.upper() for x in thislist]
 print("Printing newList at the line 56", newList)
 
 """
-EThe expression can also contain conditions, not like a filter, but as a way to manipulate the outcome
+The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome
 """
 newList.clear()
 newList = [x if x != "banana" else "orange" for x in thislist]

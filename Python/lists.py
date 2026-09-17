@@ -25,7 +25,9 @@ print("The first item from the right is", thislist[-1])
 """
 Use the constructor list() to create a list.
 """
-thislist2 = list(("banana", "orange", "apple", "pineapple", "cherry"))
+thislist2 = list(
+    ("banana", "orange", "apple", "pineapple", "cherry")
+)  # note the double round-brackets
 print(thislist2)
 
 """
