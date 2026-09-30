@@ -1,0 +1,41 @@
+PIP stands for Preferred Installer Program
+
+-- To install a package
+
+pip install requests
+py -m pip install requests  -- Global install
+
+pip list -- To list all packages install
+
+pip install requests==2.30.0 -- To install a specific version
+
+pip install -U requests -- "-U" means to upgrade, this command upgrades a package to the latest version 
+
+pip uninstall requests -- To uninstall
+
+-- To create a virtual environment
+py -m venv .venv -- Create a folder named .venv, this is a virtual environment
+
+-- To activate a virtual environment
+source .venv/Scripts/activate
+
+-- To deactivate a virtual environment
+deactivate
+
+-- To update the pip
+python.exe -m pip install --upgrade pip
+
+or
+py -m pip install -U pip 
+
+-- To install multiple packages at the same time
+pip install requests python-dotenv Flask
+
+-- To create a requirements txt file
+pip freeze > requirements.txt
+ 
+
+
+
+
+

@@ -1,0 +1,5 @@
+Pressing ESC quits from insert mode to normal mode, where you can press : to type in a command. Press i again to back to insert mode, and you are good to go.
+
+Press :wq to write then quit
+
+Press :q! to quit without saving 

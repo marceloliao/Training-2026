@@ -1,7 +1,10 @@
 - To display only directories in a folder
 	ls -d */
 	or 
-	ls -ld */ to display as a list
+	ls -ld */ 	# to display as a list
+	ls -l --time=birth # to display creation date/time
+	ls -lt # To sort by modification time
+	ls -ltr # To sort by modification time in reverse order
 
 - To delete one file
 	rm filename.txt

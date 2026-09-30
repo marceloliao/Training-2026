@@ -1,0 +1,77 @@
+-- The following steps is to check in a project for the first time, this works for projects in GitHub
+
+git init
+git add .
+git commit -m "commit message"
+git branch -M main
+
+git remote add origin https:/github.com/<username>/<repositoryname>.git --This is not working
+git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git --Should use this the new command
+
+git remote set-url origin https://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@github.com/marceloliao/Training.git --Expired
+
+This is the current token on 2026-07-06
+git remote set-url origin https://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@github.com/marceloliao/Training-2026.git/
+git remote set-url --push https://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@github.com/marceloliao/Training-2026.git/
+
+From GitLab, for Pokemon 2026-09-24
+git remote set-url origin https://glpat-bm-jhd3Hz-uvT2twmXmYYmM6MQpvOjEKdTpvYTYzZQ8.01.170no5tfr@gitlab.com/thepokemoncompanyinternational/podx/ms/mistral.git
+
+git push -u origin main -- This is not working
+git push -f origin main -- This works, need to use -f to force Push 
+
+
+-- To clone a project from Azure DevOps, like the TMS project
+
+Log in to Azure, then go to Repos -> Files, select Clone
+
+Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, 
+and run git clone, followed by the path copied from Clone URL in the previous step. See the following example:
+"
+git clone https://sdl@dev.azure.com/sdl/ProfessionalServices/_git/Sdl.Ps.Tms
+
+Create a password from the same Clone Repository window, copy the password, in the prompoted window, enter this password, I used Git Bash and
+this worked. 
+
+-- To list all branches
+git branch -a
+
+-- To see the current branch
+git branch
+
+
+-- To add a new local branch from a remote branch
+
+1. git remote add <remote_name> <repo_url>
+2. git fetch <remote_name>
+3. git checkout -b <new_branch_name> <remote_name>/<remote_branch_name>
+
+Example
+1. git remote add remotes/origin/Production/12.5  --This line is not needed
+2. git fetch remotes/origin/Production/12.5 -- This line is not needed
+3. git checkout -b Dev/maliao/WellsFargo12.5/Installer remotes/origin/Production/12.5  --This is the only line needed
+
+
+-- To delete a local branch
+git branch -d <branch name>
+
+-- To discard changes in working directory
+git restore <file> or git restore .
+
+-- How to use stash
+Command	What it does
+git stash			Saves your changes and cleans the working directory.
+git stash push -m "message"	Saves a stash with a custom name (highly recommended).
+git stash list			Shows all stashed items in a list (like stash@{0}, stash@{1}).
+git stash pop			Applies the most recent stash and deletes it from the list.
+git stash apply			Applies the stash but keeps it in the list (safer).
+git stash drop			Deletes a specific stash without applying it.
+git stash clear			Deletes all stashes forever.
+
+-- Remove already uploaded .vs/ folders to GitHub and stop tracking them
+git ls-files -z | grep -z '\.vs/' | xargs -0 git rm --cached -r
+git status   # confirm only deletions from the index + .gitignore if changed
+git commit -m "Stop tracking Visual Studio and build artifacts"
+git push
+
+After this, .vs/, bin/, obj/, etc. stay on your machine but no longer appear in GitHub.

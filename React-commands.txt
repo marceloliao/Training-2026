@@ -1,0 +1,5 @@
+-- To create a new React project
+npx create-react-app [project name]
+
+-- To launch React project on a browser
+npm start
