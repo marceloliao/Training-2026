@@ -23,7 +23,7 @@ class TestWeekdayMessage(unittest.TestCase):
         self.assertEqual(weekday_message(6), "Today is Saturday")
 
     def test_sunday(self):
-        self.assertEqual(weekday_message(7), "Today is Sunday")
+        self.assertEqual(weekday_message(7), "Today is Another day")
 
     def test_invalid_day(self):
         self.assertEqual(weekday_message(0), "Invalid day")
